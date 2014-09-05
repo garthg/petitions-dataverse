@@ -34,7 +34,7 @@ For example input, see the file: testdata/input_testdata.tsv
 
 Key people involved in this project:
   Dan Carpenter (lead researcher)
-  Garth Griffin (technical contact)
+  Garth Griffin (developer)
   Nicole Topich (archivist)
 
 For more information, contact Dan Carpenter:
