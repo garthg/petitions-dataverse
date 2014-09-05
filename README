@@ -71,12 +71,13 @@ python antislaverypetitions.py --test
 
 ________________________________________________________________________________
 
-Links:
+Acknowledgements:
 
-[1] http://thedata.harvard.edu/dvn/dv/antislaverypetitionsma
-[2] http://thedata.harvard.edu/dvn/ 
-[3] https://www.radcliffe.harvard.edu/
-[4] http://www.iq.harvard.edu/
+Supported by the National Endowment for the Humanities (PW-5105612),
+Massachusetts Archives of the Commonwealth, Radcliffe Institute for Advanced
+Study at Harvard University, Center for American Political Studies at Harvard
+University, Institutional Development Initiative at Harvard University, and
+Harvard University Library.
 
 
 ________________________________________________________________________________
@@ -99,3 +100,14 @@ You should have received a copy of the GNU General Public License along with
 AntislaveryPetitionsDataverse.  If not, see <http://www.gnu.org/licenses/>.
 
 Please see the file LICENSE for the license text.
+
+
+________________________________________________________________________________
+
+Links:
+
+[1] http://thedata.harvard.edu/dvn/dv/antislaverypetitionsma
+[2] http://thedata.harvard.edu/dvn/ 
+[3] https://www.radcliffe.harvard.edu/
+[4] http://www.iq.harvard.edu/
+
