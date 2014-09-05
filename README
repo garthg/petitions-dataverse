@@ -1,0 +1,101 @@
+Antislavery Petitions Massachusetts Dataverse
+
+Author: Garth Griffin
+Date: August 12, 2014
+
+
+This project is concerned with batch upload of a historical dataset of
+anti-slavery and anti-segregation petitions in Massachusetts [1] into a
+Dataverse within the Harvard Dataverse Network [2]. The goal is to enable
+scholars to explore and use this dataset. The project has been done in
+collaboration with Radcliffe Institute for Advanced Study [3] and with help 
+from the Harvard Institute of Quantitative Social Science [4].
+
+
+________________________________________________________________________________
+
+Code files:
+
+- antislaverypetitions.py
+  Main program for running the pipeline. Inputs and outputs are specified with
+  command-line flags. Relies on the other Python files in this folder.
+  
+- dataversestudybuilder.py
+  Module to facilitate the formatting of data for a Study in the Dataverse.
+  Provides an interface to assemble the various fields defined by the Study 
+  template and output the results as tabular data or as DDI XML files.
+
+- tsvfile.py
+  Module to facilitate reading and writing tab-delimited tabular data files.
+
+- xmlformatter.py
+  Module to facilitate the writing of DDI XML files suitable for batch import
+  into the Dataverse. 
+
+- run_xml.sh
+  Script that runs the pipeline with a preset input and creates a zip archive
+  of the output XML.
+
+
+________________________________________________________________________________
+
+Example command:
+
+python antislaverypetitions.py \
+  --output_ddi_data_file=”petitions.xlsx” \
+  --input_tsv=”petitions.tsv” \
+  --output_ddi_dir=antislavery_petitions_2014-08-12 \
+  --output_ddi_zip_file=antislavery_petitions_2014-08-12.zip 
+
+This command may take several minutes to run. When finished, you should see 
+that antislavery_petitions_2014-08-12 and antislavery_petitions_2014-08-12.zip
+have been created.
+
+The created zip file can be shared with Harvard IQSS [4] for batch import into
+a Dataverse.
+
+For details of command-line options, run:
+python antislaverypetitions.py --help
+
+
+________________________________________________________________________________
+
+Testing:
+
+To verify that the modules are working correctly, run the built-in tests.
+
+python xmlformatter.py
+python dataversestudybuilder.py
+python antislaverypetitions.py --test
+
+
+________________________________________________________________________________
+
+Links:
+
+[1] http://thedata.harvard.edu/dvn/dv/antislaverypetitionsma
+[2] http://thedata.harvard.edu/dvn/ 
+[3] https://www.radcliffe.harvard.edu/
+[4] http://www.iq.harvard.edu/
+
+
+________________________________________________________________________________
+
+Copyright and license:
+
+This file is part of AntislaveryPetitionsDataverse.
+
+AntislaveryPetitionsDataverse is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+AntislaveryPetitionsDataverse is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+AntislaveryPetitionsDataverse.  If not, see <http://www.gnu.org/licenses/>.
+
+Please see the file LICENSE for the license text.

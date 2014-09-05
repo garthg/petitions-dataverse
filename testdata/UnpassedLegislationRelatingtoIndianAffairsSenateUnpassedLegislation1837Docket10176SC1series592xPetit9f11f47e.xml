@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<codeBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.icpsr.umich.edu/DDI" source="DVN_3_0" version="2.0" xsi:schemaLocation="http://www.icpsr.umich.edu/DDI http://www.icpsr.umich.edu/DDI/Version2-0.xsd">
+  <stdyDscr>
+    <citation source="DVN_3_0">
+      <rspStmt>
+        <AuthEnty>Digital Archive of Massachusetts Anti-Slavery and Anti-Segregation Petitions</AuthEnty>
+      </rspStmt>
+      <distStmt>
+        <distrbtr>Massachusetts Archives. Boston, Mass.</distrbtr>
+      </distStmt>
+      <prodStmt>
+        <prodDate date="1837-01-28">1837-01-28</prodDate>
+      </prodStmt>
+      <titlStmt>
+        <titl>Unpassed Legislation Relating to Indian Affairs; Senate Unpassed Legislation 1837, Docket 10176, SC1/series 592x, Petition of Nathan Pocknet</titl>
+      </titlStmt>
+    </citation>
+    <dataAccs>
+      <setAvail>
+        <avlStatus>Public</avlStatus>
+        <origArch>Massachusetts Archives, Boston, MA</origArch>
+        <accsPlac>http://nrs.harvard.edu/urn-3:FHCL:12208741</accsPlac>
+        <collSize>Single petition scanned as one or more 11x17 images.</collSize>
+      </setAvail>
+    </dataAccs>
+    <stdyInfo>
+      <sumDscr>
+        <nation>United States of America</nation>
+        <geogCover>Marshpee</geogCover>
+        <geogUnit>City/Town</geogUnit>
+        <timePrd date="1837-02-17" event="end">1837-02-17</timePrd>
+        <timePrd date="1837-01-28" event="start">1837-01-28</timePrd>
+      </sumDscr>
+      <abstract>&lt;p&gt;Petition: Concerning property &lt;/p&gt; &lt;p&gt;Original: &lt;a href="http://nrs.harvard.edu/urn-3:FHCL:12208741"&gt;http://nrs.harvard.edu/urn-3:FHCL:12208741&lt;/a&gt; &lt;/p&gt; &lt;p&gt;Date of creation: 1837-01-28 &lt;/p&gt; &lt;p&gt;Petition location: Marshpee &lt;/p&gt; &lt;p&gt;Legislator, committee, or address that the petition was sent to: Elijah Swift, Boston; several names from a committee &lt;/p&gt; &lt;p&gt;Top signatures:&lt;ol&gt;&lt;li&gt;Nathan Pocknet&lt;/li&gt;&lt;li&gt;Isaac Simon&lt;/li&gt;&lt;li&gt;Abraham Jackson&lt;/li&gt;&lt;li&gt;Jube Severs&lt;/li&gt;&lt;/ol&gt; &lt;/p&gt; &lt;p&gt;Actions taken on dates: 1837-02-17,1837-02-17 &lt;/p&gt; &lt;p&gt;Legislative action: Received in the House on February 17, 1837 and referred to a committee and sent for concurrence and received in the Senate on February 17, 1837 and concurred. &lt;/p&gt; &lt;p&gt;Total signatures: 17 &lt;/p&gt; &lt;p&gt;Legislative action summary: Received, referred, sent, received, concurred &lt;/p&gt; &lt;p&gt;Females of color signatures: 1 &lt;/p&gt; &lt;p&gt;Males of color signatures: 16 &lt;/p&gt; &lt;p&gt;Identifications of signatories: signers, proprietors, [males of color], [females of color], ["others"] &lt;/p&gt; &lt;p&gt;Prayer format was &lt;a href="http://en.wikipedia.org/wiki/Printing"&gt;printed&lt;/a&gt; vs. &lt;a href="http://en.wikipedia.org/wiki/Manuscript"&gt;manuscript&lt;/a&gt;: Manuscript &lt;/p&gt; &lt;p&gt;Signatory column format: not column separated &lt;/p&gt; &lt;p&gt;Additional non-petition or unrelated documents available at archive: additional documents available &lt;/p&gt; &lt;p&gt;Acknowledgements: Supported by the National Endowment for the Humanities (PW-5105612), Massachusetts Archives of the Commonwealth, Radcliffe Institute for Advanced Study at Harvard University, Center for American Political Studies at Harvard University, Institutional Development Initiative at Harvard University, and Harvard University Library.&lt;/p&gt;</abstract>
+      <subject>
+        <keyword vocab="action">concurred</keyword>
+        <keyword vocab="action">received</keyword>
+        <keyword vocab="action">received</keyword>
+        <keyword vocab="action">referred</keyword>
+        <keyword vocab="action">sent</keyword>
+        <keyword vocab="prayer-format">Manuscript</keyword>
+        <keyword vocab="sent">Elijah Swift, Boston; several names from a committee</keyword>
+        <keyword vocab="signatory">Abraham Jackson</keyword>
+        <keyword vocab="signatory">Isaac Simon</keyword>
+        <keyword vocab="signatory">Jube Severs</keyword>
+        <keyword vocab="signatory">Nathan Pocknet</keyword>
+        <keyword vocab="signatory-category"></keyword>
+        <keyword vocab="signatory-category">females of color</keyword>
+        <keyword vocab="signatory-category">males of color</keyword>
+        <keyword vocab="signatory-category">proprietors</keyword>
+        <keyword vocab="signatory-category">signers</keyword>
+        <keyword vocab="signatory-column-format">not column separated</keyword>
+        <keyword vocab="signatures-females-of-color">1</keyword>
+        <keyword vocab="signatures-males-of-color">16</keyword>
+        <keyword vocab="signatures-total">17</keyword>
+      </subject>
+    </stdyInfo>
+    <othrStdyMat>
+      <relPubl>
+        <citation source="DVN_3_0">
+          <biblCit>D. Carpenter, N. Topich and G. Griffin. Digital Archive of Massachusetts Anti-Slavery and Anti-Segregation Petitions; Unpassed Legislation Relating to Indian Affairs; Senate Unpassed Legislation 1837, Docket 10176, SC1/series 592x. Massachusetts Archives. Boston, Mass.</biblCit>
+          <holdings URI="http://nrs.harvard.edu/urn-3:FHCL:12208741">http://nrs.harvard.edu/urn-3:FHCL:12208741</holdings>
+        </citation>
+      </relPubl>
+    </othrStdyMat>
+  </stdyDscr>
+</codeBook>
