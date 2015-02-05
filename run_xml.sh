@@ -25,20 +25,22 @@
 # This script shows an example invocation of antislaverypetitions.py parsing
 # module.
 #
-# It takes one argument, which is the suffix to use for the output files.
+# It takes two arguments, the input directory and the suffix for the output.
 #
-if [ $# -lt 1 ]; then echo "usage: $0 <OUTPUT_LABEL>";  exit 11; fi
+if [ $# -lt 2 ]; then echo "usage: $0 <INPUT_DIR> <OUTPUT_LABEL>";  exit 11; fi
 cd `dirname $0`
-suffix="$1"
+indir="$1"
+suffix="$2"
 outfile="antislaverypetitions_$suffix"
-indir="input_2014-07-29"
 cmd="\
   python antislaverypetitions.py \
   --input_tsv=$indir/petitions.tsv \
   --output_tsv=testout.tsv \
-  --output_ddi_dir=antislaverypetitions_$suffix \
-  --output_ddi_zip_file=antislaverypetitions_$suffix.zip \
+  --output_ddi_dir=$outfile \
+  --output_ddi_zip_file=$outfile.zip \
   --output_ddi_data_file=$indir/petitions.xlsx \
   "
 echo "$cmd"
 eval "$cmd"
+count="`find $outfile -type d -name 'study_*' | wc -l`"
+echo "Total entries in $outfile: $count"
