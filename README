@@ -1,3 +1,26 @@
+Petitions Dataverse
+
+Author: Garth Griffin (http://garthgriffin.com)
+Date: August 12, 2014
+
+This project is concerned with batch upload of a historical dataset of
+petitions (for example Anti-Slavery and Anti-Segreation Petitions [1]) into a 
+Dataverse within the Harvard Dataverse Network [2].
+
+The goal is to enable scholars to explore and use the datais dataset. The 
+project has been done in collaboration with Radcliffe Institute for Advanced 
+Study [3] and with help from the Harvard Institute of Quantitative Social 
+Science [4].
+
+Links:
+
+[1] http://thedata.harvard.edu/dvn/dv/antislaverypetitionsma
+[2] http://thedata.harvard.edu/dvn/ 
+[3] https://www.radcliffe.harvard.edu/
+[4] http://www.iq.harvard.edu/
+
+
+
 Installation
 ------------
 
@@ -9,17 +32,39 @@ Usage
 
 To run an update:
 
-1. If needed, parse Nicole's spreadsheet into the Dataverse spreadsheet.
-   Use antislaverypetitions.py
-   Run with --help or look at run_dev_tsv.sh for an example.
+1. If needed, parse an input spreadsheet into the Dataverse spreadsheet format.
+   Use antislaverypetitions.py, run with --help for flag documentation.
 
 2. Run the Dataverse update.
-   Invocations are captured in run_update*.sh.
+   Use update.py, run with --help for flag documentation.
 
 
-Eventually this should be refactored with the following directories:
-- One directory with all the code and dependencies
-- One directory per archive project (e.g. antislaverypetitionsma, 
-  nativeamerican, etc.) with all the data files, including the input data files
-  as well as intermediate caches like local_id_to_id.
-- One directory of all the other junk that's in this folder.
+Acknowledgements:
+-----------------
+
+Supported by the National Endowment for the Humanities (PW-5105612),
+Massachusetts Archives of the Commonwealth, Radcliffe Institute for Advanced
+Study at Harvard University, Center for American Political Studies at Harvard
+University, Institutional Development Initiative at Harvard University, and
+Harvard University Library.
+
+
+Copyright and license:
+----------------------
+
+This file is part of PetitionsDataverse.
+
+PetitionsDataverse is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+PetitionsDataverse is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+PetitionsDataverse.  If not, see <http://www.gnu.org/licenses/>.
+
+Please see the file LICENSE for the license text.
