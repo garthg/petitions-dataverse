@@ -93,8 +93,7 @@ if not USE_NON_PROD_SERVER:
       dvid_cache_file)
 else:
   # Beta server
-  dataverse_conn = dataverse.Connection('beta.dataverse.org',
-    '38eba226-aac1-4e5a-9422-34afd4771b92')
+  dataverse_conn = dataverse.Connection('beta.dataverse.org', dv_beta_api_key)
   #dataverse_conn = dataverse.Connection('apitest.dataverse.org', dv_test_api_key)
   dataverse_obj = dataverse_conn.get_dataverse(dataverse_name)
   dvhelper = dataversehelper.DataverseHelper(dv_beta_api_key, dataverse_obj,
