@@ -3,20 +3,20 @@
 Copyright 2014 Garth Griffin
 Distributed under the GNU GPL v3. For full terms see the file LICENSE.
 
-This file is part of AntislaveryPetitionsDataverse.
+This file is part of PetitionsDataverse.
 
-AntislaveryPetitionsDataverse is free software: you can redistribute it and/or
+PetitionsDataverse is free software: you can redistribute it and/or
 modify it under the terms of the GNU General Public License as published by the
 Free Software Foundation, either version 3 of the License, or (at your option)
 any later version.
 
-AntislaveryPetitionsDataverse is distributed in the hope that it will be useful,
+PetitionsDataverse is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
 or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
 more details.
 
 You should have received a copy of the GNU General Public License along with
-AntislaveryPetitionsDataverse.  If not, see <http://www.gnu.org/licenses/>.
+PetitionsDataverse.  If not, see <http://www.gnu.org/licenses/>.
 ________________________________________________________________________________
 
 Author: Garth Griffin (http://garthgriffin.com)
@@ -52,6 +52,7 @@ import traceback
 from datetime import datetime
 
 import xmlformatter
+import jsonformatter
 
 
 def HasNonblank(input_dict, key):
@@ -86,6 +87,7 @@ def ParseBoolean(input_dict, key):
   if HasNonblank(input_dict, key):
     value = input_dict[key].lower().strip()
     if value == 'na': return None
+    if value == 'not available': return None
     if value == 'yes': return True
     if value == 'no': return False
     print 'Unrecognized boolean to parse: "%s"' % value
@@ -126,19 +128,31 @@ def ParseDate(input_date):
     input_date: The input date string to parse.
 
   Returns:
-    The date in ISO format YYYY-MM-DD.
+    The date in full or substring of ISO format YYYY-MM-DD.
   '''
   if ',' in input_date:
     return min([ParseDate(x.strip()) for x in input_date.split(',')])
   canonical = None
-  full_matcher = re.compile(r'^(\d{4})(\d{2})(\d{2})$')
+  input_date = input_date.strip()
+  full_matcher = re.compile(r'^(\d{4})-?(\d{2})-?(\d{2})$')
   year_matcher = re.compile(r'^(\d{4})$')
-  if re.match(r'\d{4}-\d{2}-\d{2}', input_date):
+  year_month_matcher = re.compile(r'^(\d{4})-?(\d{2})$')
+  trail_4_matcher = re.compile(r'^(\d{4})-?00-?00$')
+  trail_2_matcher = re.compile(r'^(\d{4})-?(\d{2})-?00$')
+  if year_matcher.match(input_date):
+    return input_date
+  elif trail_4_matcher.match(input_date):
+    # Then we have four trailing zeros.
+    canonical = re.sub(trail_4_matcher, r'\1', input_date)
+  elif trail_2_matcher.match(input_date):
+    # Then we have two trailing zeros.
+    canonical = re.sub(trail_2_matcher, r'\1-\2', input_date)
+  elif re.match(r'\d{4}-\d{2}-\d{2}', input_date):
     canonical = input_date
   elif full_matcher.match(input_date):
     canonical = re.sub(full_matcher, r'\1-\2-\3', input_date)
-  elif year_matcher.match(input_date):
-    return input_date
+  elif year_month_matcher.match(input_date):
+    canonical = re.sub(year_month_matcher, r'\1-\2', input_date)
   else:
     # Then assume it's in scientific notation 1.8190527E7
     use_date = str(int(float(input_date)))
@@ -146,11 +160,16 @@ def ParseDate(input_date):
       raise ValueError('Failed to parse input date: "%s"' % input_date)
     canonical = re.sub(full_matcher, r'\1-\2-\3', use_date)
   # Verify that the canonical date string is legal.
-  if canonical.endswith('00'):
-    # Treat as the first of the month for 00.
-    canonical = canonical[:-2]+'01'
   try:
-    dateobject = datetime.strptime(canonical, '%Y-%m-%d')
+    if len(canonical) == 10:
+      dateobject = datetime.strptime(canonical, '%Y-%m-%d')
+    elif len(canonical) == 7:
+      dateobject = datetime.strptime(canonical, '%Y-%m')
+    elif len(canonical) == 4:
+      dateobject = datetime.strptime(canonical, '%Y')
+    else:
+      raise ValueError('Expected substring of YYYY-MM-DD, got length %d' % 
+          len(canonical))
   except ValueError, e:
     raise ValueError('Failed to parse input date: "%s"\n%s' % (
       input_date, traceback.format_exc(e)))
@@ -330,7 +349,7 @@ class DataverseStudyBuilder(object):
       keyword: The keyword to which the value is assigned.
       value: The value to assign to the keyword.
     '''
-    self.keywords.append((keyword, value))
+    self.keywords.append((keyword, value.strip()))
     self.dirty = True
 
   def Finalize(self):

@@ -1,0 +1,346 @@
+{
+  "files": [
+    {
+      "datasetVersionId": 69882, 
+      "version": 1, 
+      "datafile": {
+        "originalFormatLabel": "UNKNOWN", 
+        "contentType": "application/octet-stream", 
+        "name": "petitions_1.xlsx", 
+        "description": "", 
+        "filename": "%2Fopt%2Fdvn%2Fdata%2FIQSS%2FDVN%2Fdata%2F10.7910%2FDVN%2FW1CVE%2F285174", 
+        "id": 2537308, 
+        "md5": "883f3697f49328efd41a3ea135123803"
+      }, 
+      "description": "", 
+      "label": "petitions_1.xlsx"
+    }
+  ], 
+  "metadataBlocks": {
+    "citation": {
+      "fields": [
+        {
+          "typeName": "title", 
+          "multiple": false, 
+          "value": "Massachusetts Archives Collection. v.188-Revolution Petitions, 1782-1783. SC1/series 45X, Petition of John Holmes", 
+          "typeClass": "primitive"
+        }, 
+        {
+          "typeName": "author", 
+          "multiple": true, 
+          "value": [
+            {
+              "authorName": {
+                "typeName": "authorName", 
+                "multiple": false, 
+                "value": "Digital Archive of Massachusetts Anti-Slavery and Anti-Segregation Petitions, Massachusetts Archives, Boston MA", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "datasetContact", 
+          "multiple": true, 
+          "value": [
+            {
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail", 
+                "multiple": false, 
+                "value": "dcarpenter@gov.harvard.edu", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "dsDescription", 
+          "multiple": true, 
+          "value": [
+            {
+              "dsDescriptionValue": {
+                "typeName": "dsDescriptionValue", 
+                "multiple": false, 
+                "value": "<p>Petition: Property </p> <p>Original: <a href=\"http://nrs.harvard.edu/urn-3:FHCL:13909122\">http://nrs.harvard.edu/urn-3:FHCL:13909122</a> </p> <p>Date of creation: 1782-10-01 </p> <p>Petition location: Berkshire </p> <p>Top signatures:<ol><li>John Holmes</li><li>Elnathan Bush</li><li>Thomas Webb</li><li>Pomp Benjamin</li><li>Pomp Benjamin Jr.</li></ol> </p> <p>Total signatures: 60 </p> <p>Legal voter signatures (males not identified as non-legal): 60 </p> <p>Identifications of signatories: inhabitants of the county of Berkshire, [males of color] </p> <p>Prayer format was <a href=\"http://en.wikipedia.org/wiki/Printing\">printed</a> vs. <a href=\"http://en.wikipedia.org/wiki/Manuscript\">manuscript</a>: Manuscript </p> <p>Additional archivist notes: Berkshire County, New York, Indian tribes, wilderness, township, land, east side, emigration, emigrate, Senango alias Ossenango, Susquehanna River </p> <p>Acknowledgements: Supported by the National Endowment for the Humanities (PW-5105612), Massachusetts Archives of the Commonwealth, Radcliffe Institute for Advanced Study at Harvard University, Center for American Political Studies at Harvard University, Institutional Development Initiative at Harvard University, and Harvard University Library.</p>", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "subject", 
+          "multiple": true, 
+          "value": [
+            "Social Sciences"
+          ], 
+          "typeClass": "controlledVocabulary"
+        }, 
+        {
+          "typeName": "keyword", 
+          "multiple": true, 
+          "value": [
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "prayer-format", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "Manuscript", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "Elnathan Bush", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "John Holmes", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "Pomp Benjamin", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "Pomp Benjamin Jr.", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "Thomas Webb", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory-category", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "inhabitants of the county of Berkshire", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatory-category", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "males of color", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatures-legal-voters", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "60", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "keywordVocabulary": {
+                "typeName": "keywordVocabulary", 
+                "multiple": false, 
+                "value": "signatures-total", 
+                "typeClass": "primitive"
+              }, 
+              "keywordValue": {
+                "typeName": "keywordValue", 
+                "multiple": false, 
+                "value": "60", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "publication", 
+          "multiple": true, 
+          "value": [
+            {
+              "publicationCitation": {
+                "typeName": "publicationCitation", 
+                "multiple": false, 
+                "value": "D. Carpenter, N. Topich and G. Griffin. Digital Archive of Massachusetts Anti-Slavery and Anti-Segregation Petitions; Massachusetts Archives Collection. v.188-Revolution Petitions, 1782-1783. SC1/series 45X. Massachusetts Archives. Boston, Mass.", 
+                "typeClass": "primitive"
+              }, 
+              "publicationURL": {
+                "typeName": "publicationURL", 
+                "multiple": false, 
+                "value": "http://nrs.harvard.edu/urn-3:FHCL:13909122", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "productionDate", 
+          "multiple": false, 
+          "value": "1782-10-01", 
+          "typeClass": "primitive"
+        }, 
+        {
+          "typeName": "distributor", 
+          "multiple": true, 
+          "value": [
+            {
+              "distributorName": {
+                "typeName": "distributorName", 
+                "multiple": false, 
+                "value": "Massachusetts Archives. Boston, Mass.", 
+                "typeClass": "primitive"
+              }
+            }, 
+            {
+              "distributorName": {
+                "typeName": "distributorName", 
+                "multiple": false, 
+                "value": "Harvard Dataverse Network", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }, 
+        {
+          "typeName": "dateOfDeposit", 
+          "multiple": false, 
+          "value": "2015-02-11", 
+          "typeClass": "primitive"
+        }, 
+        {
+          "typeName": "timePeriodCovered", 
+          "multiple": true, 
+          "value": [
+            {
+              "timePeriodCoveredStart": {
+                "typeName": "timePeriodCoveredStart", 
+                "multiple": false, 
+                "value": "1782-10-01", 
+                "typeClass": "primitive"
+              }, 
+              "timePeriodCoveredEnd": {
+                "typeName": "timePeriodCoveredEnd", 
+                "multiple": false, 
+                "value": "1782-10-01", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }
+      ], 
+      "displayName": "Citation Metadata"
+    }, 
+    "geospatial": {
+      "fields": [
+        {
+          "typeName": "geographicCoverage", 
+          "multiple": true, 
+          "value": [
+            {
+              "country": {
+                "typeName": "country", 
+                "multiple": false, 
+                "value": "United States", 
+                "typeClass": "controlledVocabulary"
+              }, 
+              "city": {
+                "typeName": "city", 
+                "multiple": false, 
+                "value": "Berkshire", 
+                "typeClass": "primitive"
+              }
+            }
+          ], 
+          "typeClass": "compound"
+        }
+      ], 
+      "displayName": "Geospatial Metadata"
+    }
+  }, 
+  "lastUpdateTime": "2015-05-18T20:31:58Z", 
+  "versionMinorNumber": 3, 
+  "versionNumber": 2, 
+  "createTime": "2015-05-18T20:30:25Z", 
+  "distributionDate": "2015-02-11", 
+  "versionState": "RELEASED", 
+  "productionDate": "Production Date", 
+  "id": 69882, 
+  "releaseTime": "2015-05-18T20:31:58Z"
+}
+
+
